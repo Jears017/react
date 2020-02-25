@@ -1,0 +1,9 @@
+.kek{
+    width: 95px;
+    height: 65px;
+  }
+
+  .header{
+    grid-area: h;
+    background-color: green;
+  }

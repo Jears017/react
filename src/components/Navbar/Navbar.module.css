@@ -1,0 +1,27 @@
+.nav{
+  grid-area: n;
+  background-color: forestgreen;
+  padding: 20px;
+}
+
+.item a{
+  color: white;
+  text-decoration: none;
+}
+
+.item a.activeLink{
+  color: gold;
+}
+/* 
+.item.active a{
+  color: gold;
+  text-decoration: none;
+} */
+
+/* .item{
+  color: white;
+}
+
+.item a:hover{
+  color: pink;
+} */
