@@ -15,6 +15,7 @@ const Dialogs = (props) => {
     }
 
     return (
+        <div>
         <div className={s.dialogs}>
             <div className={s.dialogs_item}>
                 {dialogsElements}
@@ -22,13 +23,13 @@ const Dialogs = (props) => {
             <div className={s.messages}>
                 {messageElements}
             </div>
-            <div>
+            </div>
+            <div className={s.messageInput}>
                 <textarea ref={newMessageElement}></textarea>
                 <div>
                     <button onClick={sendMessage}>send</button>
                 </div>
-            </div>
-
+                </div>
         </div>
     )
 }
