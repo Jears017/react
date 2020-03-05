@@ -17,7 +17,7 @@ debugger;
       <Navbar />
       <div className='app-wrapper-content'>
         <Route path='/dialogs' render={() => <Dialogs state={props.state.messagesPage} dispatch={props.dispatch} newMessageText={props.state.messagesPage.newMessageText}/>} />
-        <Route path='/profile' render={() => <Profile store={props.store} profilePage={props.state.profilePage}  />} />
+        <Route path='/profile' render={() => <Profile store={props.store}/>} />
         <Route path='/music' render={() => <Music />} />
       </div>
 
