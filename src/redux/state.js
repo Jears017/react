@@ -1,8 +1,7 @@
 import profileReducer from "./profile-reducer";
 import dialogsReducer from "./dialogs-reducer";
 
-const ADD_POST = 'ADD-POST';
-const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+
 
 let store = {
     _state: {
@@ -56,15 +55,7 @@ let store = {
 
 }
 
-export const addPostActionCreater = () => ({ type: ADD_POST })
 
-
-export const updateNewPostTextActionCreater = (text) => (
-    {
-        type: UPDATE_NEW_POST_TEXT,
-        newText: text,
-
-    })
 
 
 export default store;

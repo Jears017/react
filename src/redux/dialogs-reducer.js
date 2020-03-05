@@ -10,7 +10,7 @@ const dialogsReducer = (state, action) => {
                 message: state.newMessageText,
             };
             state.messages.push(newMessage)
-            state.newMessageText = ' ';
+            state.newMessageText = '';
             return state;
         case UPDATE_NEW_MESSAGE_TEXT:
             state.newMessageText = action.newMessage;
@@ -19,5 +19,15 @@ const dialogsReducer = (state, action) => {
             return state;
     }
 }
+
+export const addMessageActionCreater = () => ({ type: ADD_MESSAGE })
+
+
+export const helpMe = (message) => (
+    {
+        type: UPDATE_NEW_MESSAGE_TEXT,
+        newMessage: message,
+
+    })
 
 export default dialogsReducer;
