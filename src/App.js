@@ -6,6 +6,7 @@ import Profile from './components/Profile/Profile';
 import Dialogs from './components/Dialogs/Dialogs';
 import Music from './components/Music/Music';
 import { Route } from 'react-router-dom';
+import DialogsContainer from './components/Dialogs/DialogsContainer';
 
 
 const App = (props) => {
@@ -16,7 +17,7 @@ debugger;
       <Header />
       <Navbar />
       <div className='app-wrapper-content'>
-        <Route path='/dialogs' render={() => <Dialogs state={props.state.messagesPage} dispatch={props.dispatch} newMessageText={props.state.messagesPage.newMessageText}/>} />
+        <Route path='/dialogs' render={() => <DialogsContainer store={props.store}/>} />
         <Route path='/profile' render={() => <Profile store={props.store}/>} />
         <Route path='/music' render={() => <Music />} />
       </div>
